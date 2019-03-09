@@ -163,6 +163,7 @@ p {
 	margin-top: 15px;
 	background: white;
 }
+
 /** Navigations Starts Here **/
 nav {
 	margin-bottom: 35px;
@@ -180,12 +181,20 @@ nav .links {
 
 nav a {
 	text-decoration: none;
+	color: black;
+}
+
+a:hover {
+	text-decoration: overline;
 }
 
 header {
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 }
 
+.aboutHeader {
+	border-bottom: 1px dashed black;
+}
 /** end nav css **/
 
 .top-content {
@@ -261,3 +270,80 @@ footer nav a {
 	color: white;
 	text-decoration: none;
 }
+
+/**** -- ABOUT CSS BEGINS -- ****/
+
+.aboutContent {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: center;
+}
+.aboutBox {
+	width: 280px;
+	margin: 20px 0px 20px 0px;
+	padding-bottom: 20px;
+	border-bottom: 1px dashed black;
+}
+.btn {
+	border: 1px solid black;
+	border-radius: 6px;
+	background: whitesmoke;
+	padding: 10px;
+}
+
+.about-bottom {
+	padding: 20px 40px 20px 40px;
+	margin-bottom: 20px;
+}
+
+/** Products Page CSS **/
+.products {
+	diplay: flex;
+	flex-flow: flex;
+}
+
+.prodcut-box {
+	width: 300px;
+	height: 300px;
+	backgroud: red;
+	margin-bottom: 20px;
+}
+
+
+/*Contact Page */
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
